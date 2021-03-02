@@ -1,17 +1,29 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Gavin rocks!
-        </p>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor () {
+    super();
+    this.state = {
+      string: 'Hello Gavin Coulson'
+    };
+  }
+  render(){
+    return(
+          <div className="App">
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+              <p>
+                { this.state.string}
+              </p>
+              <button>
+                Change text
+              </button>
+            </header>
+          </div>
+        );
+  }
 }
 
 export default App;
