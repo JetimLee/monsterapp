@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(2,0,36);
+  background:
+   linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,28,224,1) 41%, rgba(0,212,255,1) 100%);
+};
+
+h1 {
+  font-family: 'Bigelow Rules';
+  font-size: 72px;
+  color: #0ccac4;
 }
 
 code {
